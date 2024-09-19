@@ -1,3 +1,23 @@
-# jenkins
-a= " hello world"
-print(a)
+# Python program to display the Fibonacci sequence up to n terms
+
+def fibonacci(n):
+    a, b = 0, 1
+    count = 0
+    print("Fibonacci sequence:")
+    
+    # Check if the number of terms is valid
+    if n <= 0:
+        print("Please enter a positive integer")
+    elif n == 1:
+        print(a)
+    else:
+        while count < n:
+            print(a, end=" ")
+            # Update values
+            a, b = b, a + b
+            count += 1
+
+# Input from user
+num_terms = int(input("How many terms? "))
+fibonacci(num_terms)
+
